@@ -5,7 +5,7 @@ y_values = [i**2 for i in x_values]
 
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, c='red', s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # Zdefiniowanie tytułuy wykresu i etykiet osi.
 ax.set_title("Kwadraty liczb", fontsize=24)
